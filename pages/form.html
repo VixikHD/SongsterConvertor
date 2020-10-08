@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="cs">
+    <head>
+        <title>Songster Convertor</title>
+        <style>
+            html {
+                background-repeat: no-repeat;
+                background-position: center;
+                background-image: url("/assets/img/background.jpg");
+                background-size: cover;
+            }
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            h1 {
+                color: white;
+                font-family: sans-serif;
+            }
+            .box {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 700px;
+                transform: translate(-50%, -50%);
+            }
+            input {
+                position: relative;
+                display: inline-block;
+                box-sizing: border-box;
+                font-size: 20px;
+                transition: .5s;
+            }
+            input[type="url"] {
+                background: #fff;
+                width: 500px;
+                height: 50px;
+                border: none;
+                outline: none;
+                padding: 0 25px;
+                border-radius: 25px 0 0 25px;
+            }
+            input[type="submit"] {
+                background: #dbaf00;
+                border: none;
+                height: 50px;
+                outline: none;
+                padding: 0 25px;
+                border-radius: 0 25px 25px 0;
+            }
+            input[type="submit"]:hover {
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box">
+            <h1>Convert and print notes</h1>
+            <form method="post">
+                <input type="url" name="link" placeholder="Insert the URL here">
+                <input type="submit" name="" value="Convert">
+            </form>
+        </div>
+    </body>
+</html>
